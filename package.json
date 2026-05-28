@@ -1,0 +1,22 @@
+{
+  "name": "886-learning-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@preact/preset-vite": "^2.9.1",
+    "@tailwindcss/vite": "^4.1.8",
+    "dexie": "^4.0.11",
+    "preact": "^10.26.8",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
