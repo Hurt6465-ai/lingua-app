@@ -1,5 +1,5 @@
 {
-  "name": "886-learning-app",
+  "name": "886-learning-framework",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -11,7 +11,10 @@
   "dependencies": {
     "@preact/preset-vite": "^2.9.1",
     "@tailwindcss/vite": "^4.1.8",
+    "@use-gesture/vanilla": "^10.3.1",
     "dexie": "^4.0.11",
+    "hanzi-writer": "^3.7.3",
+    "pinyin-pro": "^3.28.1",
     "preact": "^10.26.8",
     "tailwindcss": "^4.1.8",
     "vite": "^6.3.5"
