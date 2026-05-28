@@ -1,18 +1,37 @@
-# 886 Learning App
+# 886 Learning Framework
 
-这是给 `886.best` 配套的轻量学习 App 前端，技术栈：
+这是给 `886.best` 配套重做的轻量学习 App 基础框架。
+
+## 技术栈
 
 - Vite
 - Preact
 - TypeScript
 - TailwindCSS
 - Dexie / IndexedDB
+- pinyin-pro 拼音库
+- hanzi-writer 笔顺库
+- @use-gesture/vanilla 手势库
 
-目标部署域名建议：
+## 当前目标
 
-```txt
-learn.886.best
-```
+这不是正式内容站，也不是 NotionNext。  
+这是单独部署到 `learn.886.best` 的手机端学习 App 框架。
+
+## 当前已经包含
+
+- 手机优先首页
+- 浅渐变背景
+- 底部导航
+- 课程入口卡片
+- 拼音学习模块
+- 笔顺练习模块
+- 单词学习框架
+- 手势滑动学习卡片
+- 选择题组件
+- 填空题组件
+- IndexedDB 本地进度表
+- 配置化入口，方便后续接真实数据
 
 ## 本地运行
 
@@ -29,29 +48,16 @@ npm run build
 
 ## Cloudflare Pages
 
-创建 Cloudflare Pages 项目时填写：
-
 ```txt
 Framework preset: Vite
 Build command: npm run build
 Build output directory: dist
 ```
 
-## 当前功能
+## 下一步
 
-- App 风格首页
-- 背单词页面
-- 中文发音按钮
-- 中文 → 缅文卡片
-- 收藏单词
-- 本地学习进度
-- 学习统计
-- 主线闯关地图视觉骨架
-
-## 下一步建议
-
-1. 把真实词库导入 `src/data/words.ts`
-2. 加拼音声母 / 韵母 / 声调模块
-3. 加多邻国式选择题
-4. 加音频文件
-5. 最后再接登录和 VIP
+1. 按真实需求调整首页卡片。
+2. 接入真实拼音课程 JSON。
+3. 接入真实汉字笔顺练习列表。
+4. 接入单词、填空题、选择题数据。
+5. 再考虑账号同步和 VIP 权限。
